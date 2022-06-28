@@ -1,33 +1,34 @@
-// import needed libs
-// import logo from './logo.svg';
-import './App.css';
-import Hello from './components/Hello'
-import React from 'react';
-import Yeah from './components/yeah'
-import MarriedWith from './components/marriedWith'
+// // import needed libs
+// // import logo from './logo.svg';
+// import './App.css';
+// import Hello from './components/Hello'
+// import React from 'react';
+// import Yeah from './components/yeah'
+// import MarriedWith from './components/marriedWith'
 
-const Greetings = () => 
-{
-  return <h1>Yuhu</h1>;
-}
+// const Greetings = () => 
+// {
+//   return <h1>Yuhu</h1>;
+// }
 
-const App = () => 
-{
-  return(
-    <div className='App'>
-      <h1>Hello World</h1>
-      <Greetings />
-      {/* <Hello name="Yuhu" age={120}/>
-      <Hello name="Njir" age={500}/> */}
-      <Hello>
-        <h1>Hello World. This is years old</h1>
-        <p>Yuhu is here</p>
-      </Hello>
-      <Yeah name="Darell" />
-      <MarriedWith name="Nely" />
-    </div>
-  );
-}
+// const App = () => 
+// {
+//   return(
+//     <div className='App'>
+//       <h1>Hello World</h1>
+//       <Greetings />
+//       {/* <Hello name="Yuhu" age={120}/>
+//       <Hello name="Njir" age={500}/> */}
+//       {/* this is a child proprs */}
+//       <Hello>
+//         <h1>Hello World. This is years old</h1>
+//         <p>Yuhu is here</p>
+//       </Hello>
+//       <Yeah name="Darell" />
+//       <MarriedWith name="Nely" />
+//     </div>
+//   );
+// }
 
 // function App() {
 //   return (
@@ -52,5 +53,10 @@ const App = () =>
 //   );
 // }
 
+import Header from "./components/Header";
+
 // export app
-export default App;
+export default function App()
+{
+  return <Header />;
+}
